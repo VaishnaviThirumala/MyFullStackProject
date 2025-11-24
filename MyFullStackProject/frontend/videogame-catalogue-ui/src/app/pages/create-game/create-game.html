@@ -1,0 +1,22 @@
+<form [formGroup]="gameForm" (ngSubmit)="save()">
+    <div class="mb-2">
+      <label>Title:</label>
+      <input formControlName="title" class="form-control" />
+    </div>
+  
+    <div class="mb-2">
+      <label>Genre:</label>
+      <input formControlName="genre" class="form-control" />
+    </div>
+  
+    <div class="mb-2">
+      <label>Release Year:</label>
+      <input type="number" formControlName="releaseYear" class="form-control" />
+    </div>
+  
+    <button type="submit" class="btn btn-success">Create Game</button>
+
+    <pre>Form valid: {{ gameForm.valid }} | Form invalid: {{ gameForm.invalid }}</pre>
+<pre>{{ gameForm.value | json }}</pre>
+  </form>
+  
