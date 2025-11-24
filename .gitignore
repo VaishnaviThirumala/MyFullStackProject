@@ -56,3 +56,7 @@ Thumbs.db
 
 # Optional
 .vscode
+
+# .NET sensitive files
+/backend/appsettings.json
+/backend/appsettings.Development.json
