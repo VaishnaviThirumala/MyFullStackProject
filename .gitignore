@@ -60,3 +60,12 @@ Thumbs.db
 # .NET sensitive files
 /backend/appsettings.json
 /backend/appsettings.Development.json
+
+# Angular / Node
+node_modules/
+dist/
+.env
+*.log
+
+# Local secret environment files
+src/environments/*.local.ts
